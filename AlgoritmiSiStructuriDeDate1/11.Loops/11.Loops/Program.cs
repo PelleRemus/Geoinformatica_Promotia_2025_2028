@@ -97,8 +97,14 @@
             // restul împărțirii lui x[i] la suma cifrelor lui x[i].
 
             // Consideram valida citirea precedenta
+            int[] y = new int[n];
             for (int i = 0; i < n; i++)
-                Console.Write(numbers[i] % SumaCifrelor(numbers[i]) + " ");
+                y[i] = numbers[i] % SumaCifrelor(numbers[i]);
+
+            // Afisam vectorul y
+            for (int i = 0; i < n; i++)
+                Console.Write(y[i] + " ");
+            Console.WriteLine();
         }
 
         // "static" nu conteaza deocamdata; "int" reprezinta tipul de return, tipul metodei in sine, ca si cum am declara-o 
