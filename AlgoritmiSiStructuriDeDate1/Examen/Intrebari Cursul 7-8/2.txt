@@ -1,0 +1,65 @@
+Intrebarea 2: Explicati ce este si cum functioneaza do..while in C#, si ce fac instructiunile break si continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Do..while este o structura repetitiva. Break si continue pot sa o influenteze.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: (Optional: Structura repetitiva do..while se numeste "Structura repetitiva cu numar necunoscut de pasi cu test final")
+Bucla do..while este foarte similara cu bucla while, si anume aptul ca repeta codul din intriorul su atata timp cat conditia dinantru cesteia este indeplinita, diferenta fiind ca intai se executa codul, si apoi se face verificarea, deci avem minim o executie a codului in acest mod.
+Instructiunea break termina mai repede bucla in care suntem, deci practic iese fortat chiar daca ar fi valida conditia din bucla.
+Instructiunea continue finalieaza mai repede pasul curent din bucla, si trece la pasul urmator, astfel putem sari peste niste pasi din do..while.

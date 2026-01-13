@@ -1,0 +1,69 @@
+Intrebarea 4: Enumerati tipurile de referinta din C#, descrieti-le in mare si faceti comparatii intre ele unde este cazul.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Sunt 4 in total, 2 dintre ele similare intre ele, iar celelalte 2 de asemenea similare intre ele.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Tipurile de referinta in C# sunt obiect, dinamic, vectori (arrays) si siruri de caractere (string).
+Tipul obiect este tipul / clasa de baza tuturor celorlalte tipuri de date, deci poate primi orice valoare, fie el valoare, referinta sau alt tip de date definit de utilizator.
+(Optional: tipurile definite de utilizator sunt clase, iar obiectele acestora sunt de asemenea de tip referinta)
+Tipul dinamic este similar, poate primi orice valoare, dar diferenta dintre acestea doua este ca verificarea tipului pentru obiect se face la compilare, pe cand verificarea tipului pentru dinamic se face in timpul executiei.
+
+Tipul vector (array) poate sa tina minte mai multe valori de acelasi tip intr-o singura variabila.
+Tipul sir de caractere (string) este o insiruire de valori de tip char. Diferenta dintre acesta si un vector de char[] este ca stringul este imutabil, adica valorile de pe diferite pozitii nu pot fi modificate dupa creare.

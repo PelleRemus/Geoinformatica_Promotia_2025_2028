@@ -1,0 +1,66 @@
+Intrebarea 3: Spuneti ce stiti despre instructiunea switch clasica (cea originala, mai lunga de scris)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: un switch poate fi rescris sub forma if, else if, ..., else, dar invers nu este mereu valabil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Instructiunea switch este si ea o instructiune de decizie, dar difera fata de if prin modul in care se iau deciziile: o bucata de cod se executa doar daca valoarea unei variabile este exact valoarea data in cazul respectiv al switch-ului.
+(Optional: datorita acestui fapt, putem rescrie switch-ul sub forma de if-uri, cu conditia variabila == valoarea_cazului, si else pentru ramura default)
+Se pot pune oricate ramuri (cazuri) intr-un switch. Ca si sintaxa, se scrie "switch(variabila)" urmat de un set de acolade, apoi pentru fiecare caz "case valoare:", dupa care codul de executat in acel caz. Codul nu trebuie scris obligatoriu intre acolade. valoarea fiecarui ca trebuie sa fie o constanta sau literal.
+Cand se adevereste un caz, se executa tot codul pana la primul break;, deci este nevoie de minim un break intr-un switch. Cand sunt doua cazuri unul dupa altul, inseamna ca amandoua vor executa acelasi cod atunci cand se indeplineste.
+Pentru fallback, in cazul in care nu se indeplineste niciun case, putem folosi ramura "default:".
+Instructiunile switch se pot imbrica (dar codul devine greu de inteles astfel).

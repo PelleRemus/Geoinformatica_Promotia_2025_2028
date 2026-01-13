@@ -1,0 +1,66 @@
+Intrebarea 3: Povestiti putin despre array-uri multidimensionale (pentru 2 dimensiuni, se numesc matrici).
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Am mai folosit vectori, sau array unidimensional, acestia pot fi similari in multe aspecte, dar mai complecsi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Mai ales pentru 2 dimensiuni, array-urile (matricile) sunt foarte utile, deoarece ecranul unui calculator este el in sine in 2 dimensiuni. Ceea ce inseamna ca informatia unei imagini este salvata sub aceasta forma, si nu numai, orice joc 2D sau informatia dintr-un tabel Excel.
+In C#, acestea se declara similar ca si vectorii, doar ca intre parantezele drepte se separa dimensiunile cu virgula. Pentru matrice, ar fi in felul urmator: [,], iar pentru un cub (3 dimensiuni) ar fi [,,], si asa mai departe.
+Daca lucrul cu vectorii se face majoritar folosind un for, lucrul cu matricile va fi facut cu 2 for-uri unul in celalalt pentru cele 2 dimensiuni.
+Initializarea trebuie sa specifice numarul de randuri si cel de coloane (pentru matrice), si dimensiunea pentru orice alta dimensiune mai are, separate prin virgula.
+Accesarea elementelor este similara ca la vectori, doar ca avem doi indici separate prin virgula, de exemplu matrix[i, j].

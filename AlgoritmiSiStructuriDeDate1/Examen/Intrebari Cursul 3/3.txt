@@ -1,0 +1,63 @@
+Intrebarea 3: Ce este o variabila in C#? Care sunt operatiile principale pentru acestea (cum le creem etc), si ce sintaxa au?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Este una dintre cele mai de baza elemente ale unui program. Un nume diferit al operatiilor de baza ar fi creare, primire de valoare, amandoua deodata, modificare de valoare.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Variabilele sunt elemente fundamentale ale programelor in C#, folosite pentru stocarea datelor, care ajuta la controlul modului in care datele circula si sunt utilizate prin program.
+Operatiile principale pentru acestea sunt declararea, initializarea, declararea cu initializare si atribuirea (sau reinitializare, sau reatribuire).
+Sintaxa pentru declarare este <tipul_de_data> <numele_variabilei>;, pentru initializare si atribuire este <numele_variabilei> = <valoarea>;, iar pentru declarare cu initialiare este <tipul_de_data> <numele_variabilei> = <valoarea>;

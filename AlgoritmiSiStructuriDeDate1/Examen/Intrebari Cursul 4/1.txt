@@ -1,0 +1,64 @@
+Intrebarea 1: La ce sunt folositi operatorii din categoriile aritmetici, relationali si cei logici, si dati exemple cu explicatii.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Numele categoriei este destul de descriptiv si poate deja sa ne indice la ce folosesc acei operatori
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Operatorii aritmetici realizeaza calcule matematice, fiind operatori binari (adica intre doua variabile). Exemple: +, -, *, /, % (modulo, adica restul impartirii)
+(Se pot include aici si ++ si --, desi ar fi mai potriviti in categoria de atribuire)
+Operatorii relationali compara doua variabile si returneaa o valoare bool (true sau false), si sunt folositi in decizii. Exemple: ==, !=, >, <, >=, <=.
+Operatorii logici se folosesc intre doua valori bool pentru a le combina in functie de regulile operatorului. Sunt utili pentru deciziile mai complexe care necesita mai multe verificari. Exemple: &&, ||, ! (negare, operator unar, adica necesita o singura variabila).

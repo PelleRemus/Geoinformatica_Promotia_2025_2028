@@ -1,0 +1,66 @@
+Intrebarea 4: Enumerati si descrieti cele mai bune practici de utilizare a variabilelor in C#.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Sunt 5 in total, legat de denumirea variabilelor, valorile lor si locatia unde ar trebui declarate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Numele variabilelor trebuie sa fie descriptive, semnificative si care descriu scopul lor in cod.
+Trebuie sa respectam conventiile de denumire, si anume sa folosim camelCase, adica fiecare cuvinte sunt lipite unele de altele, cu prima litera a fiecarui cuvant litera mare, mai putin primul cuvant: aVeryLongVariableNameAsAnEample.
+Variabilele ar trebui initialiate inainte de utiliare pentru a evita erori.
+Ar trebui sa folosim constante pentru acele variabile care nu se vor modifica in timpul executiei, de ex. const double pi = 3.14159;
+Variabilele ar trebui declarate intr-un domeniu cat mai mic pentru liibilitatea codului si mentenanta (de ex, daca o variabila este folosita doar intr-un for, va fi declarata in interiorul acestuia, nu deasupra lui).

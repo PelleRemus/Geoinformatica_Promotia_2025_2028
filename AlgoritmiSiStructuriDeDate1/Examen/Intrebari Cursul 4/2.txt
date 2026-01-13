@@ -1,0 +1,62 @@
+Intrebarea 2: La ce sunt folositi operatorii din categoriile operatori pe biti si operatori de atribuire, si dati exemple cu explicatii. Dati cateva exemple de operatori din categoria alti operatori, cu explicatii.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Denumirile categoriilor sunt descriptive si va ajuta cu ceea ce fac. La alti operatori, sunt inclusi si unii care sunt cuvinte cheie in loc de simboluri. Doi operatori se repeta si in alte categorii, dar cand sunt folositi cu alt scop sunt inclusi in categoria "alti operatori".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Operatorii pe biti lucreaza direct cu bitii valorilor unor variabile, fiind mai eficienti. Exemple: &, |, ^, <<, >>.
+Operatorii de atribuire sunt folositi pentru modificarea valorii unei variabile. Unii sunt combinati cu alti operatori pentru prescurtare, adica realizeaza operatia operatorului de baza, si apoi atribuie rezultatul in variabila din stanga. Exemple: =, +=, -=, *=, /=, %=, <<=, >>=, &=, ^=, |=.
+Alti operatori includ oeratorul ternar ( a ? b : c ), sizeof(), typeof(), & (unar, pentru adresa de memorie), * (unar, pentru pointer), is, as)

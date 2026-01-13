@@ -1,0 +1,66 @@
+Intrebarea 1: Enumerati conversiile de tip din C# si descrieti-le, apoi dati exemple si diferentele intre ele.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Sunt doar 2. Pentru a arata diferentele intre ele, cel mai simplu este sa dati exemplu cu ce fce o conversie intr-o situatie, si ce face cealalta conversie in aceeasi situatie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Conversiile de tip pot fi implicite si explicite. Cele implicite se intampla automat, pe cand cele explicite trebuie specificate in cod.
+(Optional: putem folosi conversie explicita, chiar daca ar functiona si conversia implicita in acel caz)
+Un exemplu ar fi cand incercam sa dam o valoare reala unui numar intreg. In acel caz, avem nevoie de conversie explicita la int.
+In schimb, pentru a da o valoare intreaga unei variabile de tip real, aceasta conversie se intampla automat.
+Diferenta intre cele doua este ca la conversia implicita, aceasta conversie se intampla natural, fara risc sau pierderi de informatii, pe cand conversia eplicita nu se poate intampla natural. Atunci cand facem conversie explicita de la real la intreg, vom pierde valorile de dupa virgula ale numarului.

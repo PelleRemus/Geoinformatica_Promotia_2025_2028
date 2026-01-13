@@ -1,0 +1,64 @@
+Intrebarea 1: Spuneti ce stiti despre expresiile switch (cele introduse mai tarziu, nu cele clasice)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: se scriu mai scurt si mai lizibil decat switch-urile traditionale 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Exprasiile switch sunt o alternativa moderna a instructiunilor switch traditionale, mai lizibil si concis. Comparativ cu switch-ul clasic, ce functioneaza doar cu conditii de egalitate, switch-urile moderne functioneaza pe tipare (patterns). Astfel, putem avea conditii de egalitate, intervale, relatii sau chiar conditii complexe.
+De exemplu, un switch clasic, pentru a executa un cod pentru valorile din intervalul [2, 6], trebuia sa scriem "case 2: case 3: ... case 6: [cod]", dar in switch-ul modern, putem scrie ">= 2 and <= 6 => [cod]".
+O diferenta importanta intre acestea este ca switch-ul clasic executa cod, pe cand cel modern ne da direct o valoare la final.
+Sintaxa de baza este urmatoarea: pe prima linie, scriem "variabila switch" urmat de acolade unde avem toate cazurile, sub forma de enumeratie separate prin virgula. fiecare caz are direct conditia / tiparul, urmat de "=>", urmat de codul ce va fi executat (si valoarea ce va fi returnata). Pentru cazul default, avem "_" in loc de un pattern.

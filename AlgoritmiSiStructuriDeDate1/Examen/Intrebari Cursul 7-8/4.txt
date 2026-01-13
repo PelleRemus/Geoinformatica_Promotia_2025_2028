@@ -1,0 +1,63 @@
+Intrebarea 4: Descrieti ce face un foreach si la ce este utilizat, si ce fac instructiunile break si continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: orice foreach poate fi rescris ca si un for, dar invers nu este valabil. Break si continue functioneaza in orice bucla.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Instructiunea foreach are utilizari si mai specifice decat for, fiind folosit doar pentru parcurgerea unei colectii, fara a mai utiliza indici si incrementari. Aceasta incepe de la primul element, si trece prin toate unul cate unul, eecutand codul dinauntru pentru fiecare dintre acestea.
+Sintaa este destul de diferita: declaram o variabila noua pentru elementul curent din bucla, cu tipul de date al colectiei, si ii dam un nume. Dupa care folosim cuvantul cheie "in", si apoi scriem numele variabilei colectiei. In interiorul buclei, ar trebui sa lucram cu variabila nou creata.
+O particularitate a buclei foreach este ca in aceasta colectia nu poate fi modificata, si este valabil si pentru variabila ce itereaza peste colectie. Cu toate acestea, se pot modifica proprietatile tipurilor referinta.
+Instructiunea break termina mai repede bucla in care suntem (indiferent de aceata), deci practic iese fortat chiar daca ar fi valida conditia din bucla.
+Instructiunea continue finalieaza mai repede pasul curent din bucla, si trece la pasul urmator, astfel putem sari peste anumite elemente dintr-o colectie de exemplu.

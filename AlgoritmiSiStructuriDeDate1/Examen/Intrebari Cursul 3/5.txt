@@ -1,0 +1,62 @@
+Intrebarea 5: Ce sunt constantele si literalii in C#? Dati mai multe exemple.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Cand spun sa dati exemple, ma refer ca sunt mai multe moduri de a scrie un numar intreg, de exemplu. Pentru situatiile cand numarul intreg este foarte lung, se pot folosi separatori din 3 in 3 cifre pentru usurinta citirii acestora. Sunt si litere ce se pot folosi pentru a spune cata memorie ocupa acel numar, de exemplu. Si mai sunt si caractere speciale in cazul string-urilor sau in cazul unui char, alte exemple si acolo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Constantele sunt valori fie ce nu se vor modifica in timpul executiei programului. In unele situatii, constantele sunt numite literali, de exemplu, se pot declara constante intregi sau reale, sau se pot declara Literali string. Inafara de faptul ca nu se pot modifica, sunt tratate precum variabilele obisnuite.
+Exemple de literali intregi sunt 212, 212u ("unsigned", numar natural), 123_456_789_012_345L ("long", pe 64 de biti, si cu separatorul "_"  din 3 in 3 cifre), 212ul, 0xABcdE ("0x" inseamna hexadecimal, baza 16, unde "cifrele" de la 10 pana la 15 sunt repreentate prin literele de la A pana la E).
+Pentru literalii reali, putem specifica la final F pentru float, D (sau nimic) pentru double, M pentru decimal. Se pot scrie numerele si in forma stiintifica folosind e, ex: 1.572908e15.
+
+Literalii pentru stringuri se scriu intre ghilimele si pot include caractere speciale, introduse folosind caracterul backslash ( \ ). Exemple de caractere speciale: \\ pentru \, \' pentru ' (in interiorul unui char), \" pentru " (in interiorul unui string), \b pentru "backspace", \n pentru "new line", \r pentru "carriage return" (ca si cum am apasa "shift + enter" in word), \t pentru "tab", \v pentru "vertical tab".
+(Optional: daca avem multe caractere "\" intr-un string, putem ignora caracterele speciale scriind @ in fata ghilimelei de inceput a stringului)

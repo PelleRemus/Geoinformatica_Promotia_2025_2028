@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-
-namespace _5.DecizieSiSwitch
+﻿namespace _5.DecizieSiSwitch
 {
     internal class Program
     {
@@ -38,7 +36,7 @@ namespace _5.DecizieSiSwitch
             }
 
             // Alternativ unui if cu conditii de egalitate, putem folosi un switch. Conditia este, intr-un fel,
-            // impartita in doua locuri: partea din stanga egalului se afla intre paranteele lui switch,
+            // impartita in doua locuri: partea din stanga egalului se afla intre parantezele lui switch,
             // adica switch(number) in loc de if(number == 10), iar partea din dreapta egalului se afla in fiecare caz (case),
             // adica case 10: in loc de == 10. Pentru cazul else, putem folosi "default:", dar poate fi si evitat.
             // Dupa fiecare cod din interiorul unui case, trebuie sa punem "break;".
@@ -60,8 +58,8 @@ namespace _5.DecizieSiSwitch
                     break;
             }
 
-            // Daca vrem sa eecutam acelasi cod pentru mai mute valori ale lui Number, putem pune mai multe cazuri
-            // unul dupa altul, fara break intre ele. Toate cazurile succesive vor eecuta acelasi cod.
+            // Daca vrem sa executam acelasi cod pentru mai mute valori ale lui Number, putem pune mai multe cazuri
+            // unul dupa altul, fara break intre ele. Toate cazurile succesive vor executa acelasi cod.
             switch (number)
             {
                 case 7:

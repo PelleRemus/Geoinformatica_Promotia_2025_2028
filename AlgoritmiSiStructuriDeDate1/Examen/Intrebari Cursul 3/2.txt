@@ -1,0 +1,63 @@
+Intrebarea 1: Ce fac metodele de conversie din clasa Convert, si ce fac metodele Parse(), TryParse() si ToString()? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Toate sunt metode de conversie explicite. Sunt similare intre ele.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Metodele din clasa Convert permit conversia explicita a unui string intr-un alt tip de date folosind metoda potrivita. Parse() si TryParse() sunt similare cu acestea, deoarece fac conversia explicita tot a unui string, dar nu sunt metode ale unei clase, ci sunt metode direct ale tipului de date in care vrem sa facem conversia.
+Diferenta intre Parse() si TryParse() este ca TryParse nu face codul sa crape cu o eroare cand string-ul este incorect, ci returneaa valoarea bool false (in cazul in care a functionat, returneaza true). Iar valoarea este salvata intr-o variabila pe care o dam ca si al doilea parametru.
+ToString() este si ea o metoda pentru conversie explicita, dar este in sens invers fata de cele de pana acum: converteste orice tip intr-un string.

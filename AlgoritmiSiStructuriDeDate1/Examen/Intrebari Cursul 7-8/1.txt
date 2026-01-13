@@ -1,0 +1,63 @@
+Intrebarea 1: Explicati ce este si cum functioneaza while in C#, si ce fac instructiunile break si continue.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: While este o structura repetitiva. Break si continue pot sa o influenteze.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: (Optional: Structura repetitiva while se numeste "structura repetitiva cu numar necunoscut de pasi")
+Bucla while repeta codul din interiorul sau atata timp cat conditia dinauntrul acesteia este indeplinita. Dupa cum ii spune si numele, este utila in cazurile in care nu cunoastem numarul de pasi pe care trebuie sa-i executam, cum ar fi atunci cand vrem sa executam un cod pentru toate cifrele unui numar.
+Instructiunea break termina mai repede bucla in care suntem, deci practic iese fortat chiar daca ar fi valida conditia din bucla.
+Instructiunea continue finalieaza mai repede pasul curent din bucla, si trece la pasul urmator, astfel putem sari peste niste pasi din while.

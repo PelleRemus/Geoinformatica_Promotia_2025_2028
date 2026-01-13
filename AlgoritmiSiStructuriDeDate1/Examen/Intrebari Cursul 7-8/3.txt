@@ -1,0 +1,67 @@
+Intrebarea 3: Explicati ce este si cum functioneaza for in C#, si ce fac instructiunile break si continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: For este o structura repetitiva. Break si continue pot sa o influenteze.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: (Optional: Structura repetitiva for se numeste "structura repetitiva cu numar cunoscut de pasi")
+Bucla for se foloseste atunci cand se stie cati pasi se doresc a fi executati. In interiorul acesteia, avem o expresie initiala, o conditie care functioneaza similar ca si la while, si o expresie finala ce se executa la finalul fiecarui pas.
+Modul in care functioneaza este acesta: se executa expresia initiala, se face verificarea conditiei, daca este adevarata se executa codul din interiorul buclei, apoi se executa expresia finala si se face verificarea conditiei din nou. Procesul se repeta pana cand conditia este falsa. Se poate ca bucla for sa nu se execute nici o data.
+Bucla for este utila in special pentru parcurgerea vectorilor, dar si pentru alte situatii in care am cunoaste numarul de pasi, cum ar fi executarea unui cod pentru toate numerele din intervalul [a, b].
+Instructiunea break termina mai repede bucla in care suntem, deci practic iese fortat chiar daca ar fi valida conditia din bucla.
+Instructiunea continue finalieaza mai repede pasul curent din bucla, si trece la pasul urmator, astfel putem sari peste niste elemente din vector de exemplu.

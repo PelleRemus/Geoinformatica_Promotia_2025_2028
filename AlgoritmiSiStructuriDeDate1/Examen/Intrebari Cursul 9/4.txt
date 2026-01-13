@@ -1,0 +1,63 @@
+Intrebarea 3: Povestiti putin despre jagged arrays (vectori / tablouri "zimtate"). Care este diferenta dintre acestia si array-uri multidimensionale?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Am mai folosit vectori, sau array unidimensional, acestia pot fi similari in multe aspecte, dar mai complecsi. Mie imi place sa numesc aceste jagged arrays, "vector de vectori" (un vector format din vectori).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Un jagged array este, practic, un "vector de vectori", pentru ca elementele vectorului sunt si ele vectori. Daca declararea unui vector se face cu paranteze drepte, un vector de vectori se declara folosind doua sau mai multe seturi una dupa alta: tip_de_date[][] nume_variabila.
+Pentru initializare, trebuie intai sa initializam primul vectori de vectori, primul set de paranteze drepte avand dimensiunea data, iar restul fiind goale: new int[5][]; Pentru al doilea set de paranteze, trebuie sa iteram peste primul vector si sa initializam normal dupa. (asta pentru 2 dimensiuni)
+Modul de accesare al elementelor este similar, folosind mai multi indici, fiecare in setul sau de acolade: nume_variabila[i][j].
+Diferenta dintre un vector de vectori si o matrice este ca matricea arata ca un patrat, avand mereu acelasi numar de coloane, pe cand vectorul de vectori poate avea dimensiuni diferite.

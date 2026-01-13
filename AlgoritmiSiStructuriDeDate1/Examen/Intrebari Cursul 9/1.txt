@@ -1,0 +1,65 @@
+Intrebarea 1: Explicati ce este un vector (array) si cum se foloseste in cod.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Ajuta sa nu declaram prea multe variabile atunci cand se repeta pentru situatii similare.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Un vector (array) este o variabila tip colectie de elemente de acelasi tip de date, cu dimensiune fixa. Este util in situatiile in care ar trebui sa declaram prea multe variabile, atunci cand acestea sunt folosite in moduri similare si am avea tendinta sa le dam acelasi nume cu un numar la final (ex, nota1, nota2, ..., nota23).
+Pentru a accesa valoarea dorita folosim un index (pentru exemplul de mai sus, note[0], note[1], ..., note[22]). Acesta incepe de la 0, pana fix inainte de dimensiunea vectorului.
+Sintaxa de declarare si initializare este tipul_de_date[] nume_variabila = new tipul_de_date[dimensiune].
+Se foloseste cuvantul cheie new pentru ca un array este de tip referinta.
+De regula, vectorii se folosesc impreuna cu bucle for pentru a realiza aceleasi operatii tuturor elementelor.

@@ -1,0 +1,70 @@
+Intrebarea 1: In ce tipuri de date se clasifica variabilele in C#, si care sunt diferentele dintre acestea?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: sunt 3 in total. Diferentele sunt legate de modul in care sunt salvate sau citite din memorie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Variabilele in C# sunt clasificate in tipuri de valori, de referinte, si in tipuri de pointeri.
+Variabilele de tip valoare salveaza o noua atribuire direct la locatia lor din memorie, si o pot accesa simplu si direct.
+In schimb, variabilele de tip referinta salveaza noua atribuire intr-o alta locatie a memoriei.
+(Explictie optionala: La locatiile acestor variabile din memorie, se salveaza adresa de memorie unde s-a salvat valoarea defapt)
+, deci trebuie sa acceseze memoria in mod indirect.
+Variabilele de tip pointer stocheaza adresa de memorie a unei variabile de alt tip.
+(Explicatie optionala: Si acceseaza in mod direct adresa de memorie a acesteia, deci are acces direct precum variabilele de tip valoare, desi lucreaza cu adrese de memorie precum cele de tip referinta)

@@ -1,0 +1,71 @@
+Intrebarea 3: Enumerati categoriile tipurilor de valoare din C# inafara numerelor intregi, spuneti la ce sunt folosite (in mare) si faceti comparatii intre ele unde este cazul.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Ajuta daca te gandesti la categoriile mari de tipuri de date intai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: O categorie de tipuri de date este pentru numerele reale, unde singura diferenta intre tipuri este spatiul de memorie ocupat (si implicit, numarul de zecimale (cifre dupa virgula)).
+Acestea sunt float, double si decimal, care ocupa in aceasta ordine 4 octeti (32 de biti), 8 octeti (64 de biti), respectiv 16 octeti (128 de biti).
+Numarul de zecimale este 6-7, 15-16, 28-29 (accept si rapsunsul "7, 14, 28")
+
+Tipul de date char, cu scopul de a salva valoarea unui singur caracter oarecare, si care ocupa 2 octeti (16 biti).
+
+Tipul de date bool are scopul de a salva "true" sau "false" si ocupa un octet (8 biti).
+
+Tipul de date Enum este un tip de date definit de utilizator, cu scopul de a defini niste valori ce nu se vor schimba (constante) care sa aiba o denumire familiara.
+
+Tipul de date Struct este de asemenea definit de utilizator, iar in aceasta se pot defini o multitudine de date de diferite tipuri.

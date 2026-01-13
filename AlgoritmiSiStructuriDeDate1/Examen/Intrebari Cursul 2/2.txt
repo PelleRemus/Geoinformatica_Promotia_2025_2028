@@ -1,0 +1,67 @@
+Intrebarea 2: Enumerati tipurile de valoare de tip intreg din C#, spuneti la ce sunt folosite si faceti comparatii intre ele (diferentele intre acestea).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Sunt 8 in total, 2 cate 2 foarte similare intre ele.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: Cea mai volumimoasa categorie de tipuri de valoare este cea de numere intregi, cu scopul de a stoca numere naturale sau intregi.
+Acestea sunt byte, sbyte, short, ushort, int, uint, long si ulong,
+iar diferenta dintre ele este spatiul de memorie ocupat,
+byte si sbyte 1 octet (8 biti), short si ushort 2 octeti (16 biti), int si uint 4 octeti (32 de biti), iar long si ulong 8 octeti (64 de biti).
+Sunt 2 tipuri de date pentru fiecare spatiu diferit, pentru ca una din variabile este pentru valori naturale si cealalta pentru valori intregi.
+byte este natural, iar sbyte intreg ("signed" byte, adica cu semn, adica poate avea valori cu minus, negative).
+Pentru restul, tipul de date cu "u" in fata este cel natural si celalalt intreg ("unsigned", fara semn, nu poate avea valori cu minus, doar pozitive).

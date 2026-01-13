@@ -1,0 +1,67 @@
+Intrebarea 3: Pentru verificarea intelegerii prioritatii operatiilor in C#, rezolvati raspunsul urmatoarelor expresii cu diversi operatori:
+
+int a = 2 + 3 * 4;
+int b = (10 - 2) / 2;
+double c = 5 / 2;
+double d = 7.0 / 5;
+bool e = 3 + 2 > 4 && 5 < 10;
+bool f = true || false && false;
+bool g = !true || false;
+
+bool x = true, y = true;
+bool h = x = y == false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Unii operatori sunt mai prioritari. Unii operatori se executa de la dreapta la stanga.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: a = 14, pt ca inmultirea este mai prioritara decat adunarea
+b = 4, pt ca operatiile intre paranteze sunt prioritare
+c = 2, deoarece 5 si 2 sunt numere intregi, si zecimalele se pierd. Pentru ca atribuirea este mai putin prioritara, nu conteaza ca c este de tip double, salvam in el o valoare int (rezultatul lui 5 / 2)
+d = 1.4, deoarece unul din numerele care au efectuat impartirea este double, rezultatul nu pierde zecimalele
+e = true, deoarece adunarea este cea mai prioritara, dupa care operatorii relationali (se fac verificarile), si apoi cei logici. Deci ordinea este 3+2 = 5, apoi 5>4 = true, 5<10 = true, si apoi true && true = true.
+f = true, pentru ca AND este prioritar, deci ordinea este false && false = false, apoi true || false = false
+g = false, pentru ca negatia este prioritara operatorului ||.
+h = false, x = false, y = true. Pentru ca == are cea mai mare prioritate, iar operatorul de atribuire se executa de la dreapta la stanga. deci intai se executa y == false = false, apoi se atribuie false la x, apoi se atribuie false la h.

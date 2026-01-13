@@ -1,0 +1,64 @@
+Intrebarea 2: Ce metode sau proprietati ale unui array (vector) cunoasteti?
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Indiciu: Apar in slide-urile cursului, dar e posibil sa nu le fi folosit. Sunt diverse utilitati si sunt accesate prin nume_variabila.Proprietate sau prin Array.Metoda(nume_variabila).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raspuns: O proprietate utila a vectorilor este proprietatea Length. Aceasta ne spune dimensiunea vectorului, utila in cazul in care nu avem variabila n salvata in cod.
+O metoda care ne poate salva mult timp este metoda Array.Sort(vector). Aceasta ordoneaza crescator elementele vectorului, care este un algoritm destul de lung daca vrem sa il scriem de la 0.
+Exista metoda Array.Reverse(vector) pentru a inversa ordinea elementelor din vector (primul devine ultimul si invers, al doilea penultimul si invers, etc). Poate fi folosit imediat dupa Sort() pentru ordinea descrescatoare a elementelor vectorului.
+Pentru a copia elementele vectorului in alt vector, nu putem folosi operatorul de atribuire deoarece vectorii sunt de tip referinta. In schimb, putem folosi metoda Array.Copy(vector, vNou, lungime). Similar, se poate folosi si metoda Clone() direct din variabila: vNou = vector.Clone();
