@@ -91,6 +91,18 @@
             // O alta optiune, este sa "suprascriem" metoda "ToString()" a clasei, si sa afisam direct obiectul,
             // fara apel de metoda. Vom eplica mai in detaliu cum functioneaza mai incolo.
             Console.WriteLine(animal);
+
+            // Haideti sa vedem situatiile in care un struct este diferit de o clasa:
+            // Daca facem o variabila noua ce ia valoarea lui animal, si o modificam, animal ramane neschimbata.
+            // Daca facem acelasi lucru pentru o clasa, chiar si animal se va schimba.
+            Animal animal2 = animal;
+            animal2.specia = "Caine";
+            animal2.rasa = "Bulldog";
+            animal2.varsta = 5;
+
+            Console.WriteLine();
+            Console.WriteLine(animal); // Animal s-a schimbat si el,
+            Console.WriteLine(animal2); // Nu doar Animal2
         }
     }
 }
