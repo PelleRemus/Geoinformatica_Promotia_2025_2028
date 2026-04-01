@@ -49,13 +49,47 @@ namespace _3.Sierpinski_Recursiv
         // Patratul (Covorul) lui Sierpinski
         private void button2_Click(object sender, EventArgs e)
         {
+            bitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            graphics = Graphics.FromImage(bitmap);
 
+            graphics.Clear(Color.Black);
+            Square([new Point(225, 50), new Point(975, 50), new Point(975, 800), new Point(225, 800)]);
+
+            pictureBox1.Image = bitmap;
+        }
+
+        void Square(Point[] points)
+        {
+            if (Distance(points[0], points[1]) < 3)
+            {
+                return;
+            }
+
+            graphics.DrawPolygon(new Pen(Color.White, 2), points);
+
+
+            // Mai simplu si intuitiv: 8 linii de cod pentru cele 8 patrate
+            // Colturile sunt mai simple:
+            Square([points[0], OneThird(points[0], points[1]), OneThird(points[0], points[2]), OneThird(points[0], points[3])]);
+            Square([OneThird(points[1], points[0]), points[1], OneThird(points[1], points[2]), OneThird(points[1], points[3])]);
+            Square([OneThird(points[2], points[0]), OneThird(points[2], points[1]), points[2], OneThird(points[2], points[3])]);
+            Square([OneThird(points[3], points[0]), OneThird(points[3], points[1]), OneThird(points[3], points[2]), points[3]]);
+
+            // Liniile de mijloc sunt mai complicate
+            Square([OneThird(points[0], points[1]), OneThird(points[1], points[0]), OneThird(points[1], points[3]), OneThird(points[0], points[2])]);
+            Square([OneThird(points[1], points[2]), OneThird(points[2], points[1]), OneThird(points[2], points[0]), OneThird(points[1], points[3])]);
+            Square([OneThird(points[2], points[3]), OneThird(points[3], points[2]), OneThird(points[3], points[1]), OneThird(points[2], points[0])]);
+            Square([OneThird(points[3], points[0]), OneThird(points[0], points[3]), OneThird(points[0], points[2]), OneThird(points[3], points[1])]);
         }
 
         // Metoda pentru mijlocul unei drepte
         Point MidPoint(Point p1, Point p2)
         {
             return new Point((p1.X + p2.X) / 2, (p1.Y + p2.Y) / 2);
+        }
+        Point OneThird(Point p1, Point p2)
+        {
+            return new Point((p1.X + p1.X + p2.X) / 3, (p1.Y + p1.Y + p2.Y) / 3);
         }
 
         // Metoda pentru calculul distantei intre doua puncte
