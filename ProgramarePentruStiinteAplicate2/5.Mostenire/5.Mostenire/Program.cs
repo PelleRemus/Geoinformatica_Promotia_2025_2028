@@ -10,7 +10,12 @@
     // Animal va fi clasa de baza, iar vom crea clase ce o vor mosteni
     // Cand o clasa este derivata din alta (mostenire), se mostenesc si toate proprietatile si metodele clasei de baza,
     // iar clasa derivata poate adauga proprietati si metode suplimentare sau poate suprascrie cele mostenite
-    public class Animal
+
+    // Atunci cand o clasa este abstracta, este practic o clasa care reprezinta doar conceptual o structura de baza
+    // a unor clase derivate, dar asta inseamna ca nu dorim sa o folosim in mod direct.
+    // De accea o clasa abstracta nu poate fi instantiata (nu putem crea obiecte pentru aceasta),
+    // avand rol / utilitate doar in momentul in care este mostenita. si mai apoi acele clase vor crea obiecte.
+    public abstract class Animal
     {
         // Modificatorul de acces protected permite accesarea proprietatii sau metodei in clasa curenta si clasele derivate
         protected Specie Specia { get; set; }
@@ -31,6 +36,12 @@
         {
             return "Animalul creat are specia " + Specia + ", rasa " + Rasa + " si varsta " + Varsta + " ani";
         }
+
+        // O metoda abstracta nu poate exista decat in clase abstracte, si este automat si virtuala
+        // pentru ca trebuie sa o suprascriem in clasele derivate (care nu sunt abstracte).
+        // Motivul pentru care suntem obligati sa facem suprascrierea, este pentru ca nu avem implementare pentru metoda abstracta,
+        // iar clasele derivate au rolul de a da o definitie acestor metode.
+        public abstract void Mananca();
 
         public override string ToString()
         {
@@ -75,6 +86,12 @@
                 return Descriere();
             return "{ \"Specia\" : " + Specia + ", \"Rasa\" : " + Rasa + ", \"Varsta\" : " + Varsta + ", \"Nume\" : " + Nume + " }";
         }
+
+        // Suntem obligati sa suprascriem metoda Mananca, pentru ca este abstracta si nu am sti ce face in momentul in care o apelam
+        public override void Mananca()
+        {
+            Console.WriteLine("Cainele mananca din bol");
+        }
     }
 
     // Nu functioneaza pentru ca avem clasa Caine ca o clasa sealed
@@ -94,6 +111,27 @@
         string Latra();
     }
 
+    public class Peste : Animal
+    {
+        public Peste(string rasa, int varsta)
+            : base(Specie.Peste, rasa, varsta)
+        { }
+
+        public override void Mananca()
+        {
+            Console.WriteLine("Pestele mananca de pe fundul lacului");
+        }
+
+        // Suprascriere de operator
+        public static Peste operator +(Peste p1, Peste p2)
+        {
+            if (Random.Shared.Next(2) == 1)
+                return new Peste(p1.Rasa, p2.Varsta);
+            else
+                return new Peste(p2.Rasa, p1.Varsta);
+        }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -109,8 +147,19 @@
             Console.WriteLine(caine);
             Console.WriteLine(caine.Descriere(true));   // Supraincarcarea metodei Descriere (o folosim cu parametru in acest caz)
 
-            Animal peste = new Animal(Specie.Peste, "somn", 2);
+            // Pentru ca acum, clasa animal este abstracta, nu mai putem folosi direct "new Animal(...)"
+            // , dar putem declara variabila ca fiind Animal, pentru ca putem sa atribuim ca valoare orice clasa derivata din aceasta
+            //Animal peste = new Animal(Specie.Peste, "somn", 2);
+            Animal peste = new Peste("somn", 2);
             Console.WriteLine(peste.Descriere());   // Pentru clasa Animal, Descriere() are forma originala, asa observam polimorfismul
+
+            caine.Mananca();
+            peste.Mananca();
+
+            // Folosim operatorul suprascris
+            Peste peste2 = new Peste("crap", 3);
+            Peste copil = (Peste)peste + peste2;
+            Console.WriteLine(copil);
         }
     }
 }
