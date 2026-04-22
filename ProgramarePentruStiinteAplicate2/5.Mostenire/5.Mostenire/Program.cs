@@ -122,7 +122,7 @@
             Console.WriteLine("Pestele mananca de pe fundul lacului");
         }
 
-        // Suprascriere de operator
+        // Suprascriere (supraincarcare) de operator
         public static Peste operator +(Peste p1, Peste p2)
         {
             if (Random.Shared.Next(2) == 1)
